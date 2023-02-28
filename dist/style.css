@@ -3,6 +3,7 @@
 }
 
 .disc {
-    position: relative;
-    right: 10px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
 }

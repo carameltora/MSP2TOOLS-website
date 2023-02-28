@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
-    <script>
+       <script>
        document.addEventListener("DOMContentLoaded", function() {
 
        const opn = document.getElementById("opn");
        const menu = document.getElementById('menu');
+       const discord = document.getElementById('dc');
 
-    opn.addEventListener("click", function() {
-      menu.classList.toggle('hidden');
-    });
+       opn.addEventListener("click", function() {
+         menu.classList.toggle('hidden');
+         discord.stlye.top = "10px";
+       });
     
 
     });
@@ -39,11 +41,10 @@
               </li>
             </ul>
           </div>
-          <a href="https://discord.gg/ZhBhd8Hv">
-            <button href="https://discord.gg/ZhBhd8Hv" id="dc" type="button" class="disc text-white bg-blue-700 hover:bg-red-700 rounded-lg px-4 py-2 dark:bg-red-700 dark:hover:bg-blue-300  dark:focus:ring-red-700 font-bold text-sm">Discord</button>
-          </a>
+          
+            
         </div>
-    
+        <button href="https://discord.gg/ZhBhd8Hv" id="dc" type="button" class="disc text-white bg-blue-700 hover:bg-red-700 rounded-lg px-4 py-2 dark:bg-red-700 dark:hover:bg-blue-300  dark:focus:ring-red-700 font-bold text-sm">Discord</button>
       </nav>
 
 

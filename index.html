@@ -7,26 +7,19 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
-   <script>
+    <script>
        document.addEventListener("DOMContentLoaded", function() {
 
        const opn = document.getElementById("opn");
        const menu = document.getElementById('menu');
-       const discord = document.getElementById('dc');
-    
+
     opn.addEventListener("click", function() {
       menu.classList.toggle('hidden');
     });
     
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 700) { // Change 768 to the desired width threshold
-            document.body.appendChild(discord);
- 
 
-  
-        }
     });
-});
+
 
 
     </script>
@@ -52,6 +45,7 @@
         </div>
     
       </nav>
+
 
 </body>
 </html>

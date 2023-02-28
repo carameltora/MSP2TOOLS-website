@@ -1,0 +1,8 @@
+.disc:hover {
+    background-color: black;
+}
+
+.disc {
+    position: relative;
+    right: 10px;
+}

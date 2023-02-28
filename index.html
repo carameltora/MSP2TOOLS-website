@@ -1,28 +1,32 @@
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
-    <script>
-         document.addEventListener("DOMContentLoaded", function() {
-            
-            const opn = document.getElementById("opn");
-            const menu = document.getElementById('menu');
+   <script>
+       document.addEventListener("DOMContentLoaded", function() {
 
-            opn.addEventListener("click", function() {
-                menu.classList.remove('hidden');
-                const discord = document.getElementById('dc');
-                discord.remove();
-            });
-            
-        });
+       const opn = document.getElementById("opn");
+       const menu = document.getElementById('menu');
+       const discord = document.getElementById('dc');
+    
+    opn.addEventListener("click", function() {
+      menu.classList.toggle('hidden');
+    });
+    
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 700) { // Change 768 to the desired width threshold
+            document.body.appendChild(discord);
+ 
+
+  
+        }
+    });
+});
 
 
     </script>
@@ -42,14 +46,12 @@
               </li>
             </ul>
           </div>
-          <a href="htpps://discord.com">
-            <button id="dc" type="button" class="disc text-white bg-blue-700 hover:bg-red-700 rounded-lg px-4 py-2 dark:bg-red-700 dark:hover:bg-blue-300  dark:focus:ring-red-700 font-bold text-sm">Discord</button>
+          <a href="https://discord.gg/ZhBhd8Hv">
+            <button href="https://discord.gg/ZhBhd8Hv" id="dc" type="button" class="disc text-white bg-blue-700 hover:bg-red-700 rounded-lg px-4 py-2 dark:bg-red-700 dark:hover:bg-blue-300  dark:focus:ring-red-700 font-bold text-sm">Discord</button>
           </a>
         </div>
     
       </nav>
-
-
 
 </body>
 </html>
